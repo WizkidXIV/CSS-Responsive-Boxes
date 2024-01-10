@@ -1,3 +1,39 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.a {
+  background-color: rgb(235, 157, 40);
+  flex-grow: 1;
+  min-height: 30vw; 
+}
+
+.b {
+  background-color: rgb(235, 118, 40);
+  flex-grow: 3;
+  min-height: 90vw;
+}
+
+.c {
+  background-color: rgb(235, 53, 40);
+  flex-grow: 1;
+  min-height: 30vw;
+  
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+  }
+}
